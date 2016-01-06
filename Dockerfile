@@ -14,8 +14,8 @@ RUN yum install -y php56w php56w-cli php56w-fpm php56w-xml php56w-gd
 RUN yum clean all
 
 RUN echo 'daemon off;' >> /etc/nginx/nginx.conf
-COPY ./src/etc/supervisord.conf     /etc/supervisord.conf
-ADD  ./src/etc/supervisord.d/*.ini  /etc/supervisord.d/
+COPY ./etc/supervisord.conf     /etc/supervisord.conf
+ADD  ./etc/supervisord.d/*.ini  /etc/supervisord.d/
 
 VOLUME /data
 
