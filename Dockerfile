@@ -1,3 +1,5 @@
+# name: xbuild
+# version: 0.1.0
 FROM centos:7
 MAINTAINER LorenzoP <lorenzo@poixson.com>
 
